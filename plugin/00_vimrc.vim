@@ -54,3 +54,5 @@ autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
 
 " Pathogen https://github.com/tpope/vim-pathogen
 call pathogen#infect()
+
+colorscheme ron 
