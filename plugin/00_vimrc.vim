@@ -1,3 +1,8 @@
+" Pathogen https://github.com/tpope/vim-pathogen
+call pathogen#infect() " For some reason, this doesn't work unless executed
+                       " from .vimrc .  For that reason, this file should be
+                       " symlinked there.
+
 " I <3 color
 syntax on
 
@@ -38,21 +43,5 @@ filetype plugin indent on
 
 " Thanks to http://dancingpenguinsoflight.com/2009/02/python-and-vim-make-your-own-ide/
 autocmd FileType python set complete+=k~/.vim/syntax/python.vim isk+=.,(
-
-" http://www.jfroche.be/blogging/archive/2007/04/28/write-nicer-python-code
-" command! Pyflakes :call Pyflakes()
-" function! Pyflakes()
-"     let tmpfile = tempname()
-"     execute "w" tmpfile
-"     execute "set makeprg=(pyflakes\\ " . tmpfile . "\\\\\\|sed\\ s@" . tmpfile ."@%@)"
-"     make
-"     cw
-" endfunction
-
-" autocmd BufWrite *.{py} :call Pyflakes()
-"
-
-" Pathogen https://github.com/tpope/vim-pathogen
-call pathogen#infect()
 
 colorscheme ron 
