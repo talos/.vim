@@ -25,7 +25,7 @@ set showmatch                " show matching brackets
 set wildmenu                 " improved completion option showing
 set wildmode=full            " display list of possible completions
 set autowrite                " save before switching buffers
-set cryptmethod=blowfish     " crypt algorithm
+" set cryptmethod=blowfish     " crypt algorithm
 set wrap                     " wrap text at the end
 set textwidth=79             " default textwidth
 set formatoptions=qrn1       " auto formating options see fo-table
