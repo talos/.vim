@@ -79,3 +79,6 @@ let g:syntastic_javascript_checker = 'jslint'
 let g:syntastic_javascript_jslint_conf = ''
 
 " set iskeyword=48-57,192-255
+" 1
+" ctrl-a is used by tmux, have ctrl-i increment instead. ctrl-x still decrements
+nnoremap <C-i> <C-a>
