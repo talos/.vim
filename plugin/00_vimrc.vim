@@ -78,7 +78,8 @@ autocmd BufWinLeave * call clearmatches()
 " let g:syntastic_javascript_checker = 'jshint'
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_javascript_jshint_conf = '~/.vim/plugin/hintrc.js'
-let g:syntastic_python_checkers = ['pyflakes']
+let g:syntastic_python_checkers = ['pyflakes', 'pylint']
+let g:syntastic_bash_checkers = ['bash -n']
 let g:syntastic_java_javac_config_file_enabled = 1
 
 " set iskeyword=48-57,192-255
@@ -86,4 +87,4 @@ let g:syntastic_java_javac_config_file_enabled = 1
 " ctrl-a is used by tmux, have ctrl-i increment instead. ctrl-x still decrements
 nnoremap <C-i> <C-a>
 
-set tabstop=4
+set tabstop=2

@@ -6,7 +6,7 @@
     "es3": true,
     "forin": false,
     "immed": true,
-    "indent": 4,
+    "indent": 2,
     "latedef": true,
     "maxdepth": 4,
     "maxstatements": 10,
@@ -16,7 +16,7 @@
     "noempty": true,
     "nonew": true,
     "plusplus": true,
-    "strict": true,
+    "strict": false,
     "trailing": true,
     "undef": true,
     "unused": true
