@@ -2,12 +2,12 @@ colorscheme ron
 
 " Pathogen https://github.com/tpope/vim-pathogen
 """ Pathogen
-filetype off                " disable filetype, pathogen needs this
-call pathogen#runtime_append_all_bundles()
+"filetype off                " disable filetype, pathogen needs this
+"call pathogen#runtime_append_all_bundles()
 filetype on                 " enable filetype detection
 filetype plugin on          " enable plugin loading
 filetype plugin indent on   " enable indentation loading
-" call pathogen#infect() " For some reason, this doesn't work unless executed
+call pathogen#infect() " For some reason, this doesn't work unless executed
                        " from .vimrc .  For that reason, this file should be
                        " symlinked there.
 
@@ -38,7 +38,7 @@ set completeopt=menuone,longest,preview " completion menu style
 syntax on
 
 " Civilized tabs
-set softtabstop=4 shiftwidth=4 expandtab
+set softtabstop=2 shiftwidth=2 expandtab
 
 " Tabs--
 " Set some nice character listings, then activate list
@@ -75,9 +75,8 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-" let g:syntastic_javascript_checker = 'jshint'
 let g:syntastic_javascript_checkers = ['jshint']
-let g:syntastic_javascript_jshint_conf = '~/.vim/plugin/hintrc.js'
+let g:syntastic_javascript_jshint_args = '--config ~/.vim/plugin/hintrc.js'
 let g:syntastic_python_checkers = ['pyflakes', 'pylint']
 let g:syntastic_bash_checkers = ['bash -n']
 let g:syntastic_java_javac_config_file_enabled = 1
