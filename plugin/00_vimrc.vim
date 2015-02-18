@@ -80,6 +80,7 @@ let g:syntastic_javascript_jsxhint_args = '--config ~/.vim/plugin/hintrc.js'
 let g:syntastic_python_checkers = ['pyflakes', 'pylint']
 let g:syntastic_bash_checkers = ['bash -n']
 let g:syntastic_java_javac_config_file_enabled = 1
+let g:syntastic_html_checkers = ['tidy']
 
 " set iskeyword=48-57,192-255
 
