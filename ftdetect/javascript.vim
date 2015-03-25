@@ -1,2 +1,2 @@
-au BufRead,BufNewFile *.js,*.json set ft=javascript
+au BufRead,BufNewFile *.js,*.jsx set ft=javascript
 

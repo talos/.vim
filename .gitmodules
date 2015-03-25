@@ -1,3 +1,12 @@
 [submodule "bundle/syntastic"]
 	path = bundle/syntastic
 	url = https://github.com/scrooloose/syntastic.git
+
+[submodule "bundle/vim-flow"]
+	path = bundle/vim-flow
+	url = git://github.com/facebook/vim-flow.git
+
+[submodule "bundle/vim-json"]
+	path = bundle/vim-json
+	url = https://github.com/elzr/vim-json.git
+
