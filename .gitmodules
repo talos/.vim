@@ -10,3 +10,6 @@
 	path = bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
 
+[submodule "bundle/vim-ledger"]
+	path = bundle/vim-ledger
+	url = git@github.com:ledger/vim-ledger.git
