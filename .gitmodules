@@ -13,3 +13,7 @@
 [submodule "bundle/vim-ledger"]
 	path = bundle/vim-ledger
 	url = git@github.com:ledger/vim-ledger.git
+
+[submodule "bundle/vim-coffee-script"]
+	path = bundle/vim-coffee-script
+	url = https://github.com/kchmck/vim-coffee-script.git
