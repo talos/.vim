@@ -86,3 +86,7 @@ let g:syntastic_html_checkers = ['tidy']
 
 " ctrl-a is used by tmux, have ctrl-i increment instead. ctrl-x still decrements
 nnoremap <C-i> <C-a>
+
+" typescript -- will need installed globally, `npm -g install typescript`
+let g:tsuquyomi_disable_quickfix = 1
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
