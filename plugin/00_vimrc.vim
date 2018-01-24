@@ -90,3 +90,31 @@ nnoremap <C-i> <C-a>
 " typescript -- will need installed globally, `npm -g install typescript`
 let g:tsuquyomi_disable_quickfix = 1
 let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+
+" options for local vimrc (https://github.com/embear/vim-localvimrc)
+let g:localvimrc_whitelist = ['/Users/[^/]*/proj/[^/]*/.*']
+let g:localvimrc_sandbox = 0
+let g:localvimrc_name = ['.lvimrc']
+
+" capitalization shortcuts (http://vim.wikia.com/wiki/Capitalize_words_and_regions_easily)
+if (&tildeop)
+  nmap gcw guw~l
+  nmap gcW guW~l
+  nmap gciw guiw~l
+  nmap gciW guiW~l
+  nmap gcis guis~l
+  nmap gc$ gu$~l
+  nmap gcgc guu~l
+  nmap gcc guu~l
+  vmap gc gu~l
+else
+  nmap gcw guw~h
+  nmap gcW guW~h
+  nmap gciw guiw~h
+  nmap gciW guiW~h
+  nmap gcis guis~h
+  nmap gc$ gu$~h
+  nmap gcgc guu~h
+  nmap gcc guu~h
+  vmap gc gu~h
+endif
