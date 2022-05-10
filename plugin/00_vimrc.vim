@@ -89,7 +89,8 @@ nnoremap <C-i> <C-a>
 
 " typescript -- will need installed globally, `npm -g install typescript`
 "let g:tsuquyomi_disable_quickfix = 1
-"let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+let g:syntastic_typescriptreact_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
 
 " options for local vimrc (https://github.com/embear/vim-localvimrc)
 let g:localvimrc_whitelist = ['/Users/[^/]*/proj/[^/]*/.*']
