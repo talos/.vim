@@ -1,4 +1,4 @@
-colorscheme ron
+colorscheme default
 
 " Pathogen https://github.com/tpope/vim-pathogen
 """ Pathogen
@@ -89,8 +89,8 @@ nnoremap <C-i> <C-a>
 
 " typescript -- will need installed globally, `npm -g install typescript`
 "let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
-let g:syntastic_typescriptreact_checkers = ['tsuquyomi'] " You shouldn't use 'tsc' checker.
+let g:syntastic_typescript_checkers = ['tsuquyomi', 'eslint'] " You shouldn't use 'tsc' checker.
+let g:syntastic_typescriptreact_checkers = ['tsuquyomi', 'eslint'] " You shouldn't use 'tsc' checker.
 
 " options for local vimrc (https://github.com/embear/vim-localvimrc)
 let g:localvimrc_whitelist = ['/Users/[^/]*/proj/[^/]*/.*']
@@ -119,3 +119,6 @@ else
   nmap gcc guu~h
   vmap gc gu~h
 endif
+
+" Left align CSV display (https://github.com/chrisbra/csv.vim)
+let csv_table_leftalign=1
