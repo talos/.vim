@@ -75,12 +75,12 @@ autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
 autocmd BufWinLeave * call clearmatches()
 
-let g:syntastic_javascript_checkers = ['jsxhint']
-let g:syntastic_javascript_jsxhint_args = '--config ~/.vim/plugin/hintrc.js'
-let g:syntastic_python_checkers = ['pyflakes', 'pylint', 'pep8']
-let g:syntastic_bash_checkers = ['bash -n']
-let g:syntastic_java_javac_config_file_enabled = 1
-let g:syntastic_html_checkers = ['tidy']
+" let g:syntastic_javascript_checkers = ['jsxhint']
+" let g:syntastic_javascript_jsxhint_args = '--config ~/.vim/plugin/hintrc.js'
+" let g:syntastic_python_checkers = ['pyflakes', 'pylint', 'pep8']
+" let g:syntastic_bash_checkers = ['bash -n']
+" let g:syntastic_java_javac_config_file_enabled = 1
+" let g:syntastic_html_checkers = ['tidy']
 
 " set iskeyword=48-57,192-255
 
@@ -88,9 +88,10 @@ let g:syntastic_html_checkers = ['tidy']
 nnoremap <C-i> <C-a>
 
 " typescript -- will need installed globally, `npm -g install typescript`
-"let g:tsuquyomi_disable_quickfix = 1
-let g:syntastic_typescript_checkers = ['tsuquyomi', 'eslint'] " You shouldn't use 'tsc' checker.
-let g:syntastic_typescriptreact_checkers = ['tsuquyomi', 'eslint'] " You shouldn't use 'tsc' checker.
+" let g:tsuquyomi_disable_quickfix = 1
+" let g:syntastic_typescript_checkers = ['tsuquyomi', 'eslint'] " You shouldn't use 'tsc' checker.
+" let g:syntastic_typescript_checkers = [] " You shouldn't use 'tsc' checker.
+" let g:syntastic_typescriptreact_checkers = ['tsuquyomi', 'eslint'] " You shouldn't use 'tsc' checker.
 
 " options for local vimrc (https://github.com/embear/vim-localvimrc)
 let g:localvimrc_whitelist = ['/Users/[^/]*/proj/[^/]*/.*']

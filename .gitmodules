@@ -14,21 +14,22 @@
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
 
-[submodule "bundle/typescript-vim"]
-	path = bundle/typescript-vim
+[submodule "plugin-disabled/typescript-vim"]
+	path = plugin-disabled/typescript-vim
 	url = https://github.com/leafgarland/typescript-vim.git
 
-[submodule "bundle/syntastic"]
-	path = bundle/syntastic
+[submodule "plugin-disabled/syntastic"]
+	path = plugin-disabled/syntastic
 	url = https://github.com/vim-syntastic/syntastic
 
-[submodule "bundle/tsuquyomi"]
-	path = bundle/tsuquyomi
+[submodule "plugin-disabled/tsuquyomi"]
+	path = plugin-disabled/tsuquyomi
 	url = https://github.com/Quramy/tsuquyomi.git
 
-[submodule "bundle/tsuquyomi"]
+[submodule "plugin-disabled/vimproc"]
 	path = bundle/vimproc.vim
 	url = https://github.com/Shougo/vimproc.vim.git
+
 [submodule "bundle/csv"]
 	path = bundle/csv
 	url = https://github.com/chrisbra/csv.vim
