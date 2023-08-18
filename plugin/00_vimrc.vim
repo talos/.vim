@@ -123,3 +123,6 @@ endif
 
 " Left align CSV display (https://github.com/chrisbra/csv.vim)
 let csv_table_leftalign=1
+
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+" :CocInstall coc-tsserver coc-json coc-html coc-css coc-eslint coc-prettier
