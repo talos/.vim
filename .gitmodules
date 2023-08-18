@@ -1,7 +1,3 @@
-[submodule "bundle/vim-flow"]
-	path = bundle/vim-flow
-	url = git://github.com/facebook/vim-flow.git
-
 [submodule "bundle/vim-json"]
 	path = bundle/vim-json
 	url = https://github.com/elzr/vim-json.git
@@ -13,22 +9,6 @@
 [submodule "bundle/vim-coffee-script"]
 	path = bundle/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script.git
-
-[submodule "plugin-disabled/typescript-vim"]
-	path = plugin-disabled/typescript-vim
-	url = https://github.com/leafgarland/typescript-vim.git
-
-[submodule "plugin-disabled/syntastic"]
-	path = plugin-disabled/syntastic
-	url = https://github.com/vim-syntastic/syntastic
-
-[submodule "plugin-disabled/tsuquyomi"]
-	path = plugin-disabled/tsuquyomi
-	url = https://github.com/Quramy/tsuquyomi.git
-
-[submodule "plugin-disabled/vimproc"]
-	path = bundle/vimproc.vim
-	url = https://github.com/Shougo/vimproc.vim.git
 
 [submodule "bundle/csv"]
 	path = bundle/csv
