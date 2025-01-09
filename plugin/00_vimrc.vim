@@ -126,3 +126,15 @@ let csv_table_leftalign=1
 
 command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
 " :CocInstall coc-tsserver coc-json coc-html coc-css coc-eslint coc-prettier
+"
+
+" Use shift-K to show documentation in preview window
+nnoremap <silent> K :call <SID>show_documentation()<CR>
+
+function! s:show_documentation()
+  if (index(['vim','help'], &filetype) >= 0)
+    execute 'h '.expand('<cword>')
+  else
+    call CocAction('doHover')
+  endif
+endfunction

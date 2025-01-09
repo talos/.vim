@@ -17,3 +17,6 @@
 [submodule "pack/coc/start/coc.nvim"]
 	path = pack/coc/start/coc.nvim
 	url = git@github.com:neoclide/coc.nvim.git
+[submodule "bundle/vim-lsp"]
+	path = bundle/vim-lsp
+	url = git@github.com:prabirshrestha/vim-lsp.git
